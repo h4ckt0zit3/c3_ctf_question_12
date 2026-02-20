@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Corrupted Image Viewer</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            background: #0f0f0f;
+            color: #00ffcc;
+            font-family: monospace;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .error-box {
+            border: 1px solid #00ffcc;
+            display: inline-block;
+            padding: 30px;
+        }
+
+        img {
+            width: 300px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-box">
+        <h2>⚠️ Image failed to load.</h2>
+        <p>The file appears to be corrupted.</p>
+    </div>
+
+    <img id="hiddenImage" src="CURRUPT_SECRET.png">
+
+    <script src="script.js"></script>
+</body>
+</html>
